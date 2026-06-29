@@ -1,0 +1,115 @@
+/* Fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f3;
+  color: #333;
+}
+
+/* --- PORTADA --- */
+#portada {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+#portada h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 12px 28px;
+  background: white;
+  color: #e76f8a;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* --- GALERÍA --- */
+#galeria {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#galeria h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #e76f8a;
+  margin-bottom: 2rem;
+}
+
+.grid-fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.foto-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.foto-card:hover {
+  transform: translateY(-5px);
+}
+
+.foto-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.foto-card p {
+  padding: 12px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* --- MENSAJE --- */
+#mensaje {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #fad0c4, #ffecd2);
+}
+
+#mensaje h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #c0566e;
+  margin-bottom: 2rem;
+}
+
+.carta {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #555;
+  font-style: italic;
+}
